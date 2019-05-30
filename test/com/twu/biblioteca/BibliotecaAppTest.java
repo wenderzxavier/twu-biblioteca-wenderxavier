@@ -55,16 +55,16 @@ public class BibliotecaAppTest {
         assertEquals(expectedGender, book.getGender());
     }
 
-    @Test
-    public void shouldPrintABookList(){
-        String expected = "";
-        for (Book book : bookList.getBookList()){
-            expected += book.toString();
-        }
-
-        BibliotecaApp.printBookList(bookList.getBookList());
-        assertEquals(expected, output.toString());
-    }
+//    @Test
+//    public void shouldPrintABookList(){
+//        String expected = "";
+//        for (Book book : bookList.getBookList()){
+//            expected += book.toString();
+//        }
+//
+//        BibliotecaApp.printBookList(bookList.getBookList());
+//        assertEquals(expected, output.toString());
+//    }
 
     @Test
     public void shouldReturnEmptyBookList(){
@@ -96,6 +96,16 @@ public class BibliotecaAppTest {
         List<Book> myBooks = bookList.getBookList();
 
         assertEquals(expected, myBooks.get(myBooks.size() - 1).getId());
+    }
+
+    @Test
+    public void shouldCheckoutBook(){
+        boolean expected = false;
+        int bookId = 2;
+
+        Book returnedBook = bookList.checkoutBook(bookId);
+
+        assertEquals(expected, returnedBook.isAvailable());
     }
 
 //    @Test

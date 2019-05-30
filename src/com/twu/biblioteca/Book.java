@@ -28,6 +28,10 @@ public class Book {
         return available;
     }
 
+    public void setAvailability(boolean available){
+        this.available = available;
+    }
+
     public void setId(int id){
         this.id = id;
     }

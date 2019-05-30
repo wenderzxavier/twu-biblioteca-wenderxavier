@@ -26,10 +26,27 @@ public class BibliotecaApp {
         System.out.print("Welcome to Biblioteca. Your one-stop-shop for great books titles in Bangalore");
     }
 
-    public static void printBookList(List<Book> bookList) {
-        for (Book book : bookList){
+    public static void menuBookList() {
+        int option = -1;
+        Scanner keyboard = new Scanner(System.in);
+
+        do{
+
+            for (Book book : bookList.getBookList()){
+                System.out.print(book);
+            }
+            System.out.print("\n\nDigite 0 para voltar, ou o numero do livro para reservar ");
+
+            option = keyboard.nextInt();
+
+            Book book = bookList.checkoutBook(option);
+
             System.out.print(book);
-        }
+
+            option = 0;
+
+        }while(option > 0);
+
     }
 
     public static void printMenu(){
@@ -44,7 +61,7 @@ public class BibliotecaApp {
     public static void selectMenu(int option){
         switch (option) {
             case 1:
-                printBookList(bookList.getBookList());
+                menuBookList();
                 break;
             default:
                 System.out.print("Please select a valid option");

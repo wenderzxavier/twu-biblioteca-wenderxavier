@@ -23,4 +23,10 @@ public class BookList {
         book.setId(bookList.size() + 1);
         bookList.add(book);
     }
+
+    public Book checkoutBook(int id){
+        Book book = bookList.get(id - 1);
+        book.setAvailability(false);
+        return book;
+    }
 }
