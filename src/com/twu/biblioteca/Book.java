@@ -29,4 +29,9 @@ public class Book {
         this.gender = gender;
     }
 
+    @Override
+    public String toString() {
+        String template = "\n- %s \n Author: %s , %s - %d";
+        return String.format(template, title, author, gender, year);
+    }
 }

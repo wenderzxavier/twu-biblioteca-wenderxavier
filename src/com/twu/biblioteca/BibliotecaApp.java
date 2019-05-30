@@ -22,7 +22,16 @@ public class BibliotecaApp {
         System.out.print("Welcome to Biblioteca. Your one-stop-shop for great books titles in Bangalore");
     }
 
+    public static void printBookList(List<Book> bookList) {
+        for (Book book : bookList){
+            System.out.print(book);
+        }
+    }
+
     public static void main(String[] args) {
         printHelloMessage();
+
+        List<Book> bookList = createBookList();
+        printBookList(bookList);
     }
 }
