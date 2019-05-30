@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8099685f-2706-4101-bffb-8d013a4a1327" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/BibliotecaApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TWU_Biblioteca-master/com/twu/biblioteca/BibliotecaApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/BibliotecaAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TWU_Biblioteca-master/com/twu/biblioteca/BibliotecaAppTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +25,30 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
               <folding>
-                <element signature="e#102#103#0" expanded="true" />
-                <element signature="e#153#154#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#260#261#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="100" selection-start-line="19" selection-start-column="100" selection-end-line="19" selection-end-column="100" />
+            <state relative-caret-position="446">
+              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,6 +72,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,6 +83,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BookList.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
       </list>
@@ -118,6 +143,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -139,7 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BibliotecaAppTest.shouldPrintParameterWelcomeMessage">
+  <component name="RunManager" selected="JUnit.All in TWU_Biblioteca-master (1)">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca-master" />
@@ -161,7 +189,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in TWU_Biblioteca-master (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in TWU_Biblioteca-master" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -169,10 +197,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in TWU_Biblioteca-master" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BibliotecaAppTest.shouldCreateAnEmptyBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaAppTest" />
+      <option name="METHOD_NAME" value="shouldCreateAnEmptyBook" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BibliotecaAppTest.shouldPrintParameterWelcomeMessage" />
-        <item itemvalue="Application.BibliotecaApp" />
-        <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
-        <item itemvalue="JUnit.All in TWU_Biblioteca-master (2)" />
         <item itemvalue="JUnit.All in TWU_Biblioteca-master (1)" />
+        <item itemvalue="JUnit.BibliotecaAppTest.shouldCreateAnEmptyBook" />
+        <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.BibliotecaAppTest.shouldPrintParameterWelcomeMessage" />
+        <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
       </list>
     </recent_temporary>
   </component>
@@ -217,35 +253,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_TWU_Biblioteca-master_(1) - 2019.05.30 at 09h 21m 06s.xml">
-      <configuration name="All in TWU_Biblioteca-master (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_TWU_Biblioteca-master_(2) - 2019.05.30 at 09h 21m 27s.xml">
-      <configuration name="All in TWU_Biblioteca-master (2)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_TWU_Biblioteca-master - 2019.05.30 at 09h 22m 01s.xml">
-      <configuration name="All in TWU_Biblioteca-master" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BibliotecaAppTest_shouldPrintParameterWelcomeMessage - 2019.05.30 at 10h 36m 14s.xml">
-      <configuration name="BibliotecaAppTest.shouldPrintParameterWelcomeMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BibliotecaAppTest_shouldPrintParameterWelcomeMessage - 2019.05.30 at 10h 38m 31s.xml">
-      <configuration name="BibliotecaAppTest.shouldPrintParameterWelcomeMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BibliotecaAppTest_shouldPrintParameterWelcomeMessage - 2019.05.30 at 10h 39m 42s.xml">
-      <configuration name="BibliotecaAppTest.shouldPrintParameterWelcomeMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BibliotecaAppTest_shouldPrintParameterWelcomeMessage - 2019.05.30 at 10h 40m 38s.xml">
-      <configuration name="BibliotecaAppTest.shouldPrintParameterWelcomeMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BibliotecaAppTest_shouldPrintParameterWelcomeMessage - 2019.05.30 at 10h 44m 13s.xml">
-      <configuration name="BibliotecaAppTest.shouldPrintParameterWelcomeMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BibliotecaAppTest_shouldPrintParameterWelcomeMessage - 2019.05.30 at 10h 44m 49s.xml">
-      <configuration name="BibliotecaAppTest.shouldPrintParameterWelcomeMessage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BibliotecaAppTest_shouldPrintParameterWelcomeMessage - 2019.05.30 at 10h 45m 51s.xml">
       <configuration name="BibliotecaAppTest.shouldPrintParameterWelcomeMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BibliotecaAppTest_shouldPrintParameterWelcomeMessage - 2019.05.30 at 10h 46m 14s.xml">
+      <configuration name="BibliotecaAppTest.shouldPrintParameterWelcomeMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BibliotecaAppTest_shouldCreateAnEmptyBook - 2019.05.30 at 10h 59m 25s.xml">
+      <configuration name="BibliotecaAppTest.shouldCreateAnEmptyBook" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BibliotecaAppTest_shouldCreateAnEmptyBook - 2019.05.30 at 11h 00m 19s.xml">
+      <configuration name="BibliotecaAppTest.shouldCreateAnEmptyBook" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_TWU_Biblioteca-master_(1) - 2019.05.30 at 11h 00m 32s.xml">
+      <configuration name="All in TWU_Biblioteca-master (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_TWU_Biblioteca-master_(1) - 2019.05.30 at 11h 20m 04s.xml">
+      <configuration name="All in TWU_Biblioteca-master (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_TWU_Biblioteca-master_(1) - 2019.05.30 at 11h 40m 55s.xml">
+      <configuration name="All in TWU_Biblioteca-master (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_TWU_Biblioteca-master_(1) - 2019.05.30 at 11h 44m 05s.xml">
+      <configuration name="All in TWU_Biblioteca-master (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_TWU_Biblioteca-master_(1) - 2019.05.30 at 11h 45m 17s.xml">
+      <configuration name="All in TWU_Biblioteca-master (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_TWU_Biblioteca-master_(1) - 2019.05.30 at 11h 49m 23s.xml">
+      <configuration name="All in TWU_Biblioteca-master (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -299,10 +335,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BookList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="100" selection-start-line="19" selection-start-column="100" selection-end-line="19" selection-end-column="100" />
+        <state relative-caret-position="446">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -311,14 +373,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
-            <element signature="e#102#103#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>TWU_Biblioteca-master</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
