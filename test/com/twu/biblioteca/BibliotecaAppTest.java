@@ -69,7 +69,14 @@ public class BibliotecaAppTest {
         }
 
         BibliotecaApp.printBookList(bookList);
+        assertEquals(expected, output.toString());
+    }
 
+    @Test
+    public void shouldPrintMenu(){
+        String expected = "" +
+                "1 - List of books";
+        BibliotecaApp.printMenu();
         assertEquals(expected, output.toString());
     }
 }

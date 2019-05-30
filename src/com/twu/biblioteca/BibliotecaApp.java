@@ -2,6 +2,7 @@ package com.twu.biblioteca;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class BibliotecaApp {
 
@@ -28,10 +29,32 @@ public class BibliotecaApp {
         }
     }
 
+    public static void printMenu(){
+        String menu = "\n" +
+                "1 - List of books";
+
+        System.out.print(menu);
+    }
+
     public static void main(String[] args) {
+        int option = -1;
+        Scanner keyboard = new Scanner(System.in);
+        List<Book> bookList = createBookList();
+
+
         printHelloMessage();
 
-        List<Book> bookList = createBookList();
-        printBookList(bookList);
+        do{
+            printMenu();
+            option = keyboard.nextInt();
+
+            switch (option){
+                case 1:
+                    printBookList(bookList);
+                    break;
+            }
+
+
+        }while (option > 0);
     }
 }
