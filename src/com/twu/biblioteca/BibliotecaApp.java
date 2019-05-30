@@ -30,8 +30,10 @@ public class BibliotecaApp {
     }
 
     public static void printMenu(){
-        String menu = "\n" +
-                "1 - List of books";
+        String menu = "\n\n" +
+                "1 - List of books" +
+                "\n\n" +
+                "Selecione uma opção: ";
 
         System.out.print(menu);
     }
