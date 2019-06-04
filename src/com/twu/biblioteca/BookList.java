@@ -30,7 +30,13 @@ public class BookList {
         return book;
     }
 
+    public Book checkinBook(int id){
+        Book book = bookList.get(id - 1);
+        book.setAvailability(true);
+        return book;
+    }
+
     public boolean isBookAvailable(int id){
-        return( id < bookList.size() && bookList.get(id -1).isAvailable());
+        return( id <= bookList.size() && bookList.get(id -1).isAvailable());
     }
 }

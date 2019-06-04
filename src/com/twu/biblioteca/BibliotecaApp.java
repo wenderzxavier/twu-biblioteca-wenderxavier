@@ -15,10 +15,11 @@ public class BibliotecaApp {
             case 1:
                 bibliotecaManager.menuBookList();
                 break;
+            case 2:
+                bibliotecaManager.menuReturnBook();
             default:
                 System.out.print("Please select a valid option");
         }
-
     }
 
     public static void main(String[] args) {

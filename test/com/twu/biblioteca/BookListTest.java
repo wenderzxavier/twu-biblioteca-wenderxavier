@@ -75,6 +75,27 @@ public class BookListTest {
     }
 
     @Test
+    public void shouldCheckoutLastBookOnList() {
+        boolean expected = false;
+        int bookId = 3;
+
+        Book returnedBook = bookList.checkoutBook(bookId);
+
+        assertEquals(expected, returnedBook.isAvailable());
+    }
+
+    @Test
+    public void shouldCheckinBook() {
+        boolean expected = true;
+        int bookId = 2;
+        bookList.checkoutBook(bookId);
+
+        Book returnedBook = bookList.checkinBook(bookId);
+
+        assertEquals(expected, returnedBook.isAvailable());
+    }
+
+    @Test
     public void shouldBookIsAvailable() {
         boolean expected = true;
         boolean received = bookList.isBookAvailable(1);
