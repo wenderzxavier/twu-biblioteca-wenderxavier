@@ -9,6 +9,7 @@ public class BibliotecaManager {
 
     private BookList bookList;
     static final int RETURN_MENU = 0;
+    static final int CHECKOUT_BOOK = -1;
 
     public void createBookList() {
         bookList = new BookList();
@@ -35,18 +36,27 @@ public class BibliotecaManager {
         System.out.print(menu);
     }
 
-    public void handleMenu(){
+    public void checkoutBook(int id) {
+        if (bookList.isBookAvailable(id)) {
+            Book book = bookList.checkoutBook(id);
+            System.out.print("Thank you! Enjoy the book");
+            return;
+        }
+        System.out.println("Sorry! The book is not available");
+        menuBookList();
+    }
+
+    public void handleMenu() {
         int option;
         Scanner keyboard = new Scanner(System.in);
 
         option = keyboard.nextInt();
 
-        switch (option){
+        switch (option) {
             case RETURN_MENU:
                 return;
             default:
-                System.out.println("Invalid option. Try again.");
-                menuBookList();
+                checkoutBook(option);
                 return;
         }
     }
@@ -58,8 +68,6 @@ public class BibliotecaManager {
         System.out.print("\n\nType 0 to return, type the book number to checkout ");
 
         handleMenu();
-//        Book book = bookList.checkoutBook(option);
-//        System.out.print(book);
     }
 
     public BookList getBookListManager() {
