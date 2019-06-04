@@ -36,6 +36,10 @@ public class BookList {
         return book;
     }
 
+    public boolean isBookNotAvailable(int id){
+        return( id <= bookList.size() && !bookList.get(id -1).isAvailable());
+    }
+
     public boolean isBookAvailable(int id){
         return( id <= bookList.size() && bookList.get(id -1).isAvailable());
     }

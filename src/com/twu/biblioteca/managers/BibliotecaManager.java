@@ -47,7 +47,14 @@ public class BibliotecaManager {
     }
 
     public void returnBook(int id){
-        Book book = bookList.checkinBook(id);
+        if(bookList.isBookNotAvailable(id)){
+            Book book = bookList.checkinBook(id);
+            System.out.println("Thank you for returning book");
+            return;
+        }
+        System.out.println("That is not a valid book to return");
+        menuReturnBook();
+
     }
 
     public void handleMenuBookList() {

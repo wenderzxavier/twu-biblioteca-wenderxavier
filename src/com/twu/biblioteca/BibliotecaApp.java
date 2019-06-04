@@ -17,6 +17,7 @@ public class BibliotecaApp {
                 break;
             case 2:
                 bibliotecaManager.menuReturnBook();
+                break;
             default:
                 System.out.print("Please select a valid option");
         }
