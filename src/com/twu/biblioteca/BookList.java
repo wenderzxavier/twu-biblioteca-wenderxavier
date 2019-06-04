@@ -29,4 +29,8 @@ public class BookList {
         book.setAvailability(false);
         return book;
     }
+
+    public boolean isBookAvailable(int id){
+        return( id < bookList.size() && bookList.get(id -1).isAvailable());
+    }
 }

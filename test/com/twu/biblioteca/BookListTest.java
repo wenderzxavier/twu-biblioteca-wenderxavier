@@ -21,9 +21,9 @@ public class BookListTest {
         output = new ByteArrayOutputStream();
         ps = new PrintStream(output);
 
-        Book book1 = new Book("TWU perdoa a gente", "author1, author2", 1990, "Comedy");
-        Book book2 = new Book("TDD da depressão", "author1, author2", 1992, "Fictional");
-        Book book3 = new Book("TDD da sofrencia", "author1, author2", 2000, "Drama");
+        Book book1 = new Book("TWU forgive us", "author1, author2", 1990, "Comedy");
+        Book book2 = new Book("TDD depression", "author1, author2", 1992, "Fictional");
+        Book book3 = new Book("TDD suffering", "author1, author2", 2000, "Drama");
 
         bookList.addBook(book1);
         bookList.addBook(book2);
@@ -72,5 +72,21 @@ public class BookListTest {
         Book returnedBook = bookList.checkoutBook(bookId);
 
         assertEquals(expected, returnedBook.isAvailable());
+    }
+
+    @Test
+    public void shouldBookIsAvailable() {
+        boolean expected = true;
+        boolean received = bookList.isBookAvailable(1);
+
+        assertEquals(expected, received);
+    }
+
+    @Test
+    public void shouldBookIsNotAvailable() {
+        boolean expected = false;
+        boolean received = bookList.isBookAvailable(4);
+
+        assertEquals(expected, received);
     }
 }

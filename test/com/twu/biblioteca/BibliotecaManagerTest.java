@@ -24,6 +24,13 @@ public class BibliotecaManagerTest {
         System.setOut(ps);
     }
 
+    @Test
+    public void shouldCreateBookListWithThreeBooks() {
+        int expected = 3;
+        bibliotecaManager.createBookList();
+
+        assertEquals(expected, bibliotecaManager.getBookListManager().getBookList().size());
+    }
 
     @Test
     public void shouldPrintParameterWelcomeMessage() {
