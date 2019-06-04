@@ -1,12 +1,14 @@
 package com.twu.biblioteca;
 
+import com.twu.biblioteca.managers.BibliotecaManager;
+
 import java.util.List;
 import java.util.Scanner;
 
 public class BibliotecaApp {
 
+    static private BibliotecaManager bibliotecaManager;
     static private BookList bookList;
-
 
     public static BookList createBookList() {
         bookList = new BookList();
@@ -22,9 +24,6 @@ public class BibliotecaApp {
         return bookList;
     }
 
-    public static void printHelloMessage() {
-        System.out.print("Welcome to Biblioteca. Your one-stop-shop for great books titles in Bangalore");
-    }
 
     public static void menuBookList() {
         int option = -1;
@@ -70,11 +69,14 @@ public class BibliotecaApp {
     }
 
     public static void main(String[] args) {
+        bibliotecaManager = new BibliotecaManager();
+
+
         int option = -1;
         bookList = createBookList();
         Scanner keyboard = new Scanner(System.in);
 
-        printHelloMessage();
+        bibliotecaManager.printHelloMessage();
 
         do{
             printMenu();
