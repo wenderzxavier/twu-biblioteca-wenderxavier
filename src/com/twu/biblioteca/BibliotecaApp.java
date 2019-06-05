@@ -9,13 +9,15 @@ public class BibliotecaApp {
 
     private static BibliotecaManager bibliotecaManager;
     static final int EXIT_PROGRAM = 0;
+    static final int BOOKLIST_MENU = 1;
+    static final int RETURN_BOOK_MENU = 2;
 
     public static void selectMenu(int option){
         switch (option) {
-            case 1:
+            case BOOKLIST_MENU:
                 bibliotecaManager.menuBookList();
                 break;
-            case 2:
+            case RETURN_BOOK_MENU:
                 bibliotecaManager.menuReturnBook();
                 break;
             default:
