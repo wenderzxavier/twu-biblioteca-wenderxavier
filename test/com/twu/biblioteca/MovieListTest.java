@@ -76,5 +76,25 @@ public class MovieListTest {
         assertEquals(expected, received);
     }
 
+    @Test
+    public void shouldCheckoutMovie(){
+        boolean expected = false;
+        int movieId = 1;
+
+        Movie returnedMovie = movieList.checkoutMovie(movieId);
+
+        assertEquals(expected, returnedMovie.isAvailable());
+    }
+
+    @Test
+    public void shouldCheckoutLastMovieOnList() {
+        boolean expected = false;
+        int movieId = 1;
+
+        Movie returnedMovie = movieList.checkoutMovie(movieId);
+
+        assertEquals(expected, returnedMovie.isAvailable());
+    }
+
 
 }

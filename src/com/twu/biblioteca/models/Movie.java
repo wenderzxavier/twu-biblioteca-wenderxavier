@@ -52,6 +52,11 @@ public class Movie {
         return available;
     }
 
+    public void setAvailability(boolean available){
+        this.available = available;
+    }
+
+
     @Override
     public String toString() {
         String template = "\n %d - %s (Director: %s, %d | Rating: %d)";

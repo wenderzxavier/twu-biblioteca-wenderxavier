@@ -34,4 +34,10 @@ public class MovieList {
         return( id <= movieList.size() && movieList.get(id -1).isAvailable());
     }
 
+    public Movie checkoutMovie(int id){
+        Movie movie = movieList.get(id - 1);
+        movie.setAvailability(false);
+        return movie;
+    }
+
 }

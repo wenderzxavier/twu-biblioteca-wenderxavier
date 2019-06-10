@@ -27,9 +27,19 @@ public class MovieListManager {
             case RETURN_MENU:
                 return;
             default:
-//                checkoutMovie(option);
+                checkoutMovie(option);
                 return;
         }
+    }
+
+    private void checkoutMovie(int id) {
+        if (movieList.isMovieAvailable(id)) {
+            Movie movie = movieList.checkoutMovie(id);
+            System.out.print("Thank you! Enjoy the movie");
+            return;
+        }
+        System.out.println("Sorry! The movie is not available");
+        menuMovieList();
     }
 
     public void menuMovieList() {
