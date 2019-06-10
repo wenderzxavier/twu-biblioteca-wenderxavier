@@ -2,13 +2,12 @@ package com.twu.biblioteca.managers;
 
 import com.twu.biblioteca.Book;
 import com.twu.biblioteca.BookList;
-
-import java.util.Scanner;
+import com.twu.biblioteca.utils.Utils;
 
 public class BibliotecaManager {
 
     private BookList bookList;
-    static final int RETURN_MENU = 0;
+    private static final int RETURN_MENU = 0;
 
     public void createBookList() {
         bookList = new BookList();
@@ -22,21 +21,7 @@ public class BibliotecaManager {
         bookList.addBook(book3);
     }
 
-    public void printHelloMessage() {
-        System.out.print("Welcome to Biblioteca. Your one-stop-shop for great books titles in Bangalore");
-    }
-
-    public void printMenu() {
-        String menu = "\n\n" +
-                "1 - List of books\n" +
-                "2 - Return Book" +
-                "\n\n" +
-                "Select an option: ";
-
-        System.out.print(menu);
-    }
-
-    public void checkoutBook(int id) {
+    private void checkoutBook(int id) {
         if (bookList.isBookAvailable(id)) {
             Book book = bookList.checkoutBook(id);
             System.out.print("Thank you! Enjoy the book");
@@ -46,9 +31,8 @@ public class BibliotecaManager {
         menuBookList();
     }
 
-    public void returnBook(int id){
+    private void returnBook(int id){
         if(bookList.isBookNotAvailable(id)){
-            Book book = bookList.checkinBook(id);
             System.out.println("Thank you for returning book");
             return;
         }
@@ -57,11 +41,8 @@ public class BibliotecaManager {
 
     }
 
-    public void handleMenuBookList() {
-        int option;
-        Scanner keyboard = new Scanner(System.in);
-
-        option = keyboard.nextInt();
+    private void handleMenuBookList() {
+        int option = Utils.readFromKeyboard();
 
         switch (option) {
             case RETURN_MENU:
@@ -84,10 +65,7 @@ public class BibliotecaManager {
     public void menuReturnBook(){
         System.out.println("\n\nType the BOOK CODE or 0 to return to main menu");
 
-        int option;
-        Scanner keyboard = new Scanner(System.in);
-
-        option = keyboard.nextInt();
+        int option = Utils.readFromKeyboard();
 
         switch (option) {
             case RETURN_MENU:
@@ -96,7 +74,6 @@ public class BibliotecaManager {
                 returnBook(option);
                 return;
         }
-
     }
 
     public BookList getBookListManager() {

@@ -1,18 +1,20 @@
 package com.twu.biblioteca;
 
 import com.twu.biblioteca.managers.BibliotecaManager;
+import com.twu.biblioteca.utils.Utils;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class BibliotecaApp {
 
     private static BibliotecaManager bibliotecaManager;
-    static final int EXIT_PROGRAM = 0;
-    static final int BOOKLIST_MENU = 1;
-    static final int RETURN_BOOK_MENU = 2;
+    private static final int EXIT_PROGRAM = 0;
+    private static final int BOOKLIST_MENU = 1;
+    private static final int RETURN_BOOK_MENU = 2;
+    private static List<String> MainMenu;
 
-    public static void selectMenu(int option){
+    private static void selectMenu(int option){
         switch (option) {
             case BOOKLIST_MENU:
                 bibliotecaManager.menuBookList();
@@ -25,17 +27,33 @@ public class BibliotecaApp {
         }
     }
 
+    public static void printHelloMessage() {
+        System.out.println("Welcome to Biblioteca. Your one-stop-shop for great books titles in Bangalore");
+    }
+
+    public static void printMenu() {
+        MainMenu = new ArrayList<>();
+        MainMenu.add(BOOKLIST_MENU + " - List of Books");
+        MainMenu.add(RETURN_BOOK_MENU + " - Return Book");
+        MainMenu.add(EXIT_PROGRAM + " - Exit Program");
+
+        for(String menuOption : MainMenu){
+            System.out.println(menuOption);
+        }
+
+        System.out.println("\nSelect an option");
+    }
+
     public static void main(String[] args) {
-        Scanner keyboard = new Scanner(System.in);
         int option;
 
         bibliotecaManager = new BibliotecaManager();
         bibliotecaManager.createBookList();
-        bibliotecaManager.printHelloMessage();
+        printHelloMessage();
 
         do{
-            bibliotecaManager.printMenu();
-            option = keyboard.nextInt();
+            printMenu();
+            option = Utils.readFromKeyboard();
 
             selectMenu(option);
 

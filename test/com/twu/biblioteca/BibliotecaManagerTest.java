@@ -14,7 +14,6 @@ public class BibliotecaManagerTest {
     private PrintStream ps;
     private BibliotecaManager bibliotecaManager;
 
-
     @Before
     public void init(){
         bibliotecaManager = new BibliotecaManager();
@@ -32,9 +31,4 @@ public class BibliotecaManagerTest {
         assertEquals(expected, bibliotecaManager.getBookListManager().getBookList().size());
     }
 
-    @Test
-    public void shouldPrintParameterWelcomeMessage() {
-        bibliotecaManager.printHelloMessage();
-        assertEquals("Welcome to Biblioteca. Your one-stop-shop for great books titles in Bangalore", output.toString());
-    }
 }
