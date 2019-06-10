@@ -1,6 +1,6 @@
 package com.twu.biblioteca.managers;
 
-import com.twu.biblioteca.Book;
+import com.twu.biblioteca.models.Book;
 import com.twu.biblioteca.BookList;
 import com.twu.biblioteca.utils.Utils;
 
