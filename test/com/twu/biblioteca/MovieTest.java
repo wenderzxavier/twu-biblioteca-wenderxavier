@@ -21,4 +21,17 @@ public class MovieTest {
         assertEquals(expectedDirector, myMovie.getDirector());
         assertEquals(expectedRating, myMovie.getRating());
     }
+
+    @Test
+    public void shouldCreateAnUnratedMovie() {
+        int expectedRating = 0;
+
+        String expectedName = "movieName";
+        int expectedYear = 2019;
+        String expectedDirector = "James Cameron";
+
+        Movie testMovie = new Movie(expectedName, expectedYear, expectedDirector);
+
+        assertEquals(expectedRating, testMovie.getRating());
+    }
 }

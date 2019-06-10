@@ -1,7 +1,6 @@
 package com.twu.biblioteca;
 
 import com.twu.biblioteca.models.Movie;
-import com.twu.biblioteca.models.Movie;
 import org.junit.Before;
 import org.junit.Test;
 

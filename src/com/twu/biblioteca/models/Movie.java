@@ -16,6 +16,14 @@ public class Movie {
         this.available = true;
     }
 
+    public Movie(String name, int year, String director) {
+        this.name = name;
+        this.director = director;
+        this.year = year;
+        this.rating = 0;
+        this.available = true;
+    }
+
     public int getId() {
         return id;
     }
@@ -28,39 +36,25 @@ public class Movie {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getDirector() {
         return director;
-    }
-
-    public void setDirector(String director) {
-        this.director = director;
     }
 
     public int getYear() {
         return year;
     }
 
-    public void setYear(int year) {
-        this.year = year;
-    }
-
     public int getRating() {
         return rating;
-    }
-
-    public void setRating(int rating) {
-        this.rating = rating;
     }
 
     public boolean isAvailable() {
         return available;
     }
 
-    public void setAvailable(boolean available) {
-        this.available = available;
+    @Override
+    public String toString() {
+        String template = "\n %d - %s (Director: %s, %d | Rating: %d)";
+        return String.format(template, id, name, director, year, rating);
     }
 }
